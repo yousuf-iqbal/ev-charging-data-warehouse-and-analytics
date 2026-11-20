@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ EV Charging Demand and Energy Utilization Analytics
+#  EV Charging Demand and Energy Utilization Analytics
 
 ### From raw CSVs to a star schema, from a star schema to answers.
 
@@ -19,7 +19,7 @@
 
 ---
 
-## 🔌 The story
+## The story
 
 A housing cooperative in Trondheim, Norway put EV chargers in its garages and logged everything: every plug-in, every kilowatt-hour, every hour of the day. The result is a pile of semicolon-separated files with decimal commas, `NA` for missing values, and a clock change that makes one hour happen twice.
 
@@ -35,7 +35,7 @@ This project turns that pile into a proper analytical warehouse. Raw files go in
 
 ---
 
-## 🗺️ The pipeline
+## The pipeline
 
 ```mermaid
 flowchart LR
@@ -60,7 +60,7 @@ Three rules the whole project follows:
 
 ---
 
-## ⭐ The star schema
+## The star schema
 
 ```mermaid
 erDiagram
@@ -94,7 +94,7 @@ Facts store **surrogate keys only**. The three facts live at different grains, s
 
 ---
 
-## 🧹 Weird data, handled
+## Weird data, handled
 
 | Problem found | What we did |
 |---|---|
@@ -109,7 +109,7 @@ Facts store **surrogate keys only**. The three facts live at different grains, s
 
 ---
 
-## ✅ Mission log: does it add up?
+## Mission log: does it add up?
 
 | Check | Result |
 |---|---|
@@ -127,7 +127,7 @@ The full story is in the two reports inside `docs/`.
 
 ---
 
-## 📁 Repository map
+## Repository map
 
 ```
 .
@@ -141,7 +141,7 @@ The full story is in the two reports inside `docs/`.
 
 ---
 
-## 🚀 Run it yourself
+## Run it yourself
 
 You need PostgreSQL and pgAdmin 4. Use one empty database. In pgAdmin, highlight a block and press F5 when only part of a file must run.
 
@@ -164,7 +164,7 @@ Which file goes into which table in step 2:
 
 ---
 
-## 🔭 What comes next: the dashboard
+## What comes next: the dashboard
 
 Phase 3 turns the warehouse into answers. The warehouse was designed around ten questions:
 
@@ -183,7 +183,7 @@ The plan is reporting views in `ev_reporting`, OLAP queries with `ROLLUP` and `C
 
 ---
 
-## 🧠 Good to know
+## Good to know
 
 - The four hourly scenario columns (synthetic and flex, at 3.6 and 7.2 kW) are estimates under different assumptions. They are kept apart and never added together.
 - Only the garage `AMS_kWh` column is measured energy.
