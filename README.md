@@ -2,18 +2,13 @@
 
 #  EV Charging Demand and Energy Utilization Analytics
 
-### From raw CSVs to a star schema, from a star schema to answers.
-
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-336791?logo=postgresql&logoColor=white)
 ![SQL](https://img.shields.io/badge/ETL-pure%20SQL-orange)
 ![Model](https://img.shields.io/badge/model-star%20schema-blue)
 ![Rows](https://img.shields.io/badge/rows%20loaded-35%2C389-brightgreen)
 ![Orphans](https://img.shields.io/badge/orphan%20keys-0-brightgreen)
-![Phase](https://img.shields.io/badge/phase-2%20of%203-yellow)
 
 *DL3004 Data Warehousing and Business Intelligence Lab, FAST-NUCES Lahore, Fall 2026*
-
-**Laiba Shahzad (24L-2600) · Abdulahad (24L-2594) · Yousuf Iqbal (24L-2539)**
 
 </div>
 
